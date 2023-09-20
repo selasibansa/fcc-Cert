@@ -1,26 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    display: block;
 }
-header{
+#header ul{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
     position: fixed;
-}
-header li{
-    display: flex;
+    background-color: white;
+    border-bottom: 2px solid brown;
+    z-index: 2;
 }
 
-#nav-bar ul li{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
 #nav-bar ul li:hover{
     color: brown;
-    background-color: brown;
 }
 
 #about{
@@ -28,18 +23,35 @@ header li{
     width: 100%;
     padding: 10px 10px;
 }
+
+.controller{
+    display: flex;
+    justify-content: center;
+}
+
+
+#about img:hover{
+    transform: scale(1.5);
+}
+
 #about img,a{
-    padding: 0 500px;
     align-items: center;
     max-width: 400px;
     height: 100%;
 }
+
 #about h1, a,p{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
 }
+.info{
+    width: 100%;
+    padding: 50px 0;
+    justify-content: center;
+}
+
 .info a:hover{
     color: brown;
 }
@@ -74,6 +86,9 @@ header li{
 }
 .icon{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
 }
 
 
