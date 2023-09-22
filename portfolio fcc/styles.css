@@ -23,7 +23,25 @@
     width: 100%;
     padding: 10px 10px;
 }
+#welcome{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
 
+#welcome img{
+    border-radius: 310px;
+    width: 100px;
+    filter: grayscale(100);
+}
+#welcome img:hover{
+    filter: grayscale(0);
+}
+#welcome p:hover{
+    color: brown;
+}     
 .controller{
     display: flex;
     justify-content: center;
