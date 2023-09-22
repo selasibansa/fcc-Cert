@@ -6,15 +6,19 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     position: fixed;
+    width: 100%;
     background-color: white;
     border-bottom: 2px solid brown;
+    
+}
+
+#navbar{
+    position: fixed;
     z-index: 2;
 }
 
-
-#nav-bar ul li:hover{
+#navbar ul li:hover{
     color: brown;
 }
 
@@ -23,7 +27,7 @@
     width: 100%;
     padding: 10px 10px;
 }
-#welcome{
+#welcome-section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -31,20 +35,22 @@
     text-transform: uppercase;
 }
 
-#welcome img{
+#welcome-section img{
     border-radius: 310px;
     width: 100px;
     filter: grayscale(100);
+
 }
-#welcome img:hover{
+#welcome-section img:hover{
     filter: grayscale(0);
 }
-#welcome p:hover{
+#welcome-section h1:hover{
     color: brown;
 }     
 .controller{
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 
@@ -73,10 +79,23 @@
 .info a:hover{
     color: brown;
 }
-#about p:hover{
+#about p:hover,h1:hover,p:hover{
     color: brown;
 }
-.container{
+#projects h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#projects h2:hover{
+    color: brown;
+}
+
+.project-tile{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -112,6 +131,11 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 50px 0;
+}
+@media (max-width:600px){
+    .controller{
+        width: 100%;
+    }
 }
 
 
