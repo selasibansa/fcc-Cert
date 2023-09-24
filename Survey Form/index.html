@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  <body>
+    <section id="form-s">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank You For helping us improve</p>
+    <form action"" id="survey-form">
+      <!--info for name-->
+      <div id="user-info">
+        <div id="name-group">
+          <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name">
+          </label>
+        </div>
+        <!--info for email-->
+        <div id="email-group">
+          <label id="email-label">   Email <input id="email" type="email" required placeholder="Enter your email">
+        </div>
+        <!--info for age-->
+        <div id="number-group">
+          <label id="number-label" id="age">Age <input id="number" type="number" min="1" max="2" required placeholder="Enter you age"></label>
+        </div>
+        <!--dropbox for personality-->
+        <div id="personality-group">
+          <label id="dropdown-label" for="dropdown">Which best represents you
+            <select id="personality">
+              <option>Select your choice</option>
+              <option>Patient</option>
+              <option>Dull</option>
+              <option>Energetic</option>
+            </select>
+          </label>
+      </div>
+    </form>
+</section>
+  </body>
+    </html>
